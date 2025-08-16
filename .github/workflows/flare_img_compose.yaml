@@ -1,4 +1,4 @@
-name: Docker Build and Push nust1flare
+name: Docker Build and Push nust-seecs-flare
 
 on:
   push:
@@ -13,8 +13,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Free disk space
-        run: curl -fsSL https://raw.githubusercontent.com/kou/arrow/e49d8ae15583ceff03237571569099a6ad62be32/ci/scripts/util_free_space.sh | bash
+      - name: Delete huge unnecessary tools folder
+        run: rm -rf /opt/hostedtoolcache
+
+      - name: Remove unnecessary files
+        run: |
+          sudo rm -rf /usr/share/dotnet
+          sudo rm -rf "$AGENT_TOOLSDIRECTORY"
+
+      - name: Check disk space
+        run: df . -h
 
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -34,7 +42,7 @@ jobs:
           context: ./
 
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/nust1flare:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/nust-seecs:latest
           cache-from: type=gha
           cache-to: type=gha,mode=max
           # build-args: |

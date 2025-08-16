@@ -1,19 +1,24 @@
 # Use the specified base image from the challenge
-FROM mrigroupopbg/mri-python3
+FROM pytorch/pytorch:2.2.1-cuda12.1-cudnn8-devel
 
-# Set working directory
-WORKDIR /workspace
 
 # Set environment variables
 ENV DEBIAN_FRONTEND=noninteractive
 ENV PYTHONUNBUFFERED=1
+
+# Set working directory
+WORKDIR /workspace
 # ENV PYTHONPATH="/workspace:/workspace/LaMed/src:$PYTHONPATH"
 
+RUN python --version
+
+RUN python -c "import torch; print(torch.__version__)"
+
 # # Install system dependencies
-# RUN apt-get update && apt-get install -y \
-#     git \
-#     wget \
-#     curl \
+RUN apt-get update && apt-get install -y \
+    git \
+    wget \
+    curl 
 #     unzip \
 #     build-essential \
 #     && rm -rf /var/lib/apt/lists/*
