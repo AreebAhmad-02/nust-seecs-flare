@@ -3,7 +3,7 @@
 This repository provides a baseline implementation for the **FLARE 2025 3D Multimodal Medical Image Challenge**, including training and inference pipelines for both **medical report generation** and **visual question answering (VQA)** tasks.
 
 ---
-this repo is fir nust seecs flare competition
+this repo is fir nust seecs flare competition test
 ## 📦 Installation
 
 **Requirements:**  

@@ -30,7 +30,7 @@ COPY . /workspace/
 # Install Python dependencies
 RUN pip install --no-cache-dir --upgrade pip
 RUN python --version
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt --verbose
 # Install huggingface_hub (and optionally git-lfs if you decide to use git)
 RUN pip install --no-cache-dir huggingface_hub
 
