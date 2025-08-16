@@ -3,49 +3,48 @@ set -e
 
 
 echo "Starting FLARE25 Task 5 prediction..."
-echo "Input directory: inputs/val"
-echo "Output directory: outputs/"
+echo "Input directory: /workspace/inputs/"
+echo "Output directory: /workspace/outputs/"
 
 # Create output directory if it doesn't exist
-mkdir -p outputs/
-
+mkdir -p /workspace/outputs/
 
 
 # Run inference
-# echo "Running preprocessing on images..."
-# python Data/process/process_ct.py \
-#       --json_in inputs/val/val.json \
-#       --nifti_dir inputs/val/images \
-#       --out_dir inputs/val/val_preprocessed \
-#       --out_json inputs
+echo "Running preprocessing on images..."
+python /workspace/Data/process/process_ct.py \
+      --json_in /workspace/inputs/test.json \
+      --nifti_dir /workspace/inputs/images \
+      --out_dir /workspace/inputs/test_preprocessed \
+      --out_json /workspace/inputs
 
 
 
 echo "running inference on preprocessed .npy file"
-python infer.py \
-    --model_name_or_path /workspace/nust1flare/results/baseline \
-    --json_path /workspace/nust1flare/inputs/val/val_processed.json \
-    --data_root /workspace/nust1flare/inputs/val/val_preprocessed \
+python /workspace/infer.py \
+    --model_name_or_path /workspace/results/baseline \
+    --json_path /workspace/inputs/test_processed.json \
+    --data_root /workspace/inputs/test_preprocessed \
     --model_max_length 768 \
     --prompt "simple" \
     --proj_out_num 256
 
 
 echo "running inference for infer_vqa for"
-python infer_vqa.py \
-  --model_name_or_path results/baseline \
-  --json_path inputs/val/val_processed.json \
-  --output_path outputs \
+python /workspace/infer_vqa.py \
+  --model_name_or_path /workspace/results/baseline \
+  --json_path /workspace/inputs/test_processed.json \
+  --output_path /workspace/outputs \
   --model_max_length 512 \
-  --data_root inputs/val/val_preprocessed \
+  --data_root /workspace/inputs/test_preprocessed \
   --proj_out_num 256
 
 echo "running final vqa json for "
-python eval_vqa.py \
-  --pred_csv outputs/predictions.csv \
-  --val_json inputs/val/val_processed.json \
-  --out_json outputs/vqa.json
+python /workspace/eval_vqa.py \
+  --pred_csv /workspace/outputs/predictions.csv \
+  --val_json /workspace/inputs/test_processed.json \
+  --out_json /workspace/outputs/vqa.json
 
 echo "Prediction completed!"
 echo "Output files:"
-ls -la outputs/
+ls -la /workspace/outputs/
