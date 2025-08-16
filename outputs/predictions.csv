@@ -1,0 +1,26 @@
+case_id,scope,question_id,question,prediction
+amos_0008.npy,global,,"Which of the following conditions are present in this scan? (Select all that apply, leave empty if none)","intestinal_obstruction, abdominal_abscess"
+amos_0008.npy,local,1,"1. Is there a high-density focus at the distal end of the left ureter?
+2. What is the most likely clinical implication of the high-density focus in the left ureter? Choices: ['Ureteral calculi', 'Ureteral tumor', 'Blood clot']",Yes|Ureteral calculi
+amos_0008.npy,local,3,1. Is there mild dilation of the left renal pelvis and calyces?,Yes
+amos_0008.npy,local,4,"1. Is there a round low-density lesion in the right kidney?
+2. What is the most likely nature of the right kidney lesion? Choices: ['Cyst', 'Solid tumor', 'Abscess']",No|None of the above
+amos_0008.npy,local,6,"1. Is there enlargement in the head of the pancreas with significant dilation of the biliary and pancreatic ducts?
+2. What is the most likely clinical implication of these pancreatic and ductal findings? Choices: ['Chronic pancreatitis', 'Pancreatic cancer with obstructive dilation', 'Autoimmune pancreatitis']",Yes|Pancreatic cancer with obstructive dilation
+amos_0008.npy,local,8,"1. Is there thickening of the left colon wall?
+2. Which segment of the colon shows wall thickening? Choices: ['Right colon', 'Transverse colon', 'Left colon']
+3. What is a possible clinical implication of left colon wall thickening? Choices: ['Colitis', 'Diverticulosis', 'Normal variant']",No|None of the above|None of the above
+amos_0008.npy,local,11,"1. Is there a non-enhancing circular low-density lesion in the right kidney protruding beyond the contour?
+2. How would you describe the margins of the right renal lesion? Choices: ['Irregular margins', 'Smooth margins', 'Spiculated margins']",Yes|Smooth margins
+amos_0008.npy,local,13,"1. Is there a patchy low-density lesion around the liver fissure?
+2. What is the most likely cause of the low-density lesion around the liver fissure? Choices: ['Metastasis', 'Partial volume effect', 'Abscess']",Yes|Partial volume effect
+amos_0013.npy,global,,"Which of the following conditions are present in this scan? (Select all that apply, leave empty if none)","pancreatic_cyst, intestinal_obstruction, adrenal_hyperplasia, pancreatic_pseudocyst"
+amos_0013.npy,local,1,1. Are there multiple lymph nodes in the mesenteric region?,Yes
+amos_0013.npy,local,2,"1. Is there an irregular soft tissue density mass in the splenic gastric space with indistinct boundary with the spleen?
+2. How would you describe the enhancement pattern of the splenic gastric mass? Choices: ['No enhancement', 'Homogeneous enhancement', 'Moderate inhomogeneous enhancement']
+3. What is the most likely clinical implication of the splenic gastric mass? Choices: ['Splenic abscess', 'Metastatic tumor', 'Lymphoma']",Yes|Moderate inhomogeneous enhancement|Metastatic tumor
+amos_0013.npy,local,5,"1. Is there dilatation of the local intestine?
+2. Which region shows intestinal dilatation? Choices: ['Diffuse throughout the abdomen', 'Localized segment', 'Entire colon']",No|None of the above
+amos_0013.npy,local,7,"1. Is there a small nodular low-density lesion in the left lobe of the liver?
+2. Where is the liver lesion located? Choices: ['Right lobe', 'Left lobe', 'Anterior edge of the left lobe']
+3. What is the most likely clinical implication of this liver lesion? Choices: ['Hepatic cyst', 'Hemangioma', 'Metastatic tumor']",No|None of the above|None of the above

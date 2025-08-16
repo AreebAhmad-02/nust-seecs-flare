@@ -1,0 +1,18 @@
+generated,gt,name,green,details,liver,spleen,biliary system,lymphatic system,pancreas,kidneys,endocrine system,muscle system
+"liver: Liver is normal in size and shape. Liver parenchyma demonstrates uniform density. No abnormal density seen. Liver vascular structures are normal.
+Spleen: Spleen is normal in size and shape. Spleen parenchyma demonstrates uniform density. Liver vascular structures are normal.
+Biliary system: Intrahepatic and extrahepatic bile ducts are not dilated. Gallbladder is normal in size and shape. Gallbladder wall is not thickened. No abnormal density seen in gallbladder.
+Lymphatic system: No enlarged lymph nodes seen in the porta hepatis and adjacent to the liver.","liver: The liver is normal in size and shape with homogeneous density. A patchy low-density lesion is seen around the liver fissure.
+biliary system: The intrahepatic duct system is not obviously dilated, and the course is normal. The gallbladder is not enlarged, with no obvious thickening of the wall, and no clearly abnormal density foci are seen inside.
+spleen: The spleen is normal in size and shape with homogeneous density, and some punctate low-density foci are seen inside.
+pancreas: The pancreas is normal in size and shape with homogeneous density, and no clearly abnormal density foci are seen inside. The main pancreatic duct is not obviously dilated, and the peripancreatic fat space is clear.
+kidneys: Both kidneys are normal in size and shape with homogeneous density. A round low-density lesion is seen in the right kidney with a diameter of about 16mm. The renal pelvis-calyx system is not obviously dilated. The perirenal fat space is clear, and no clearly abnormal density foci are seen.
+endocrine system: The left adrenal gland is thickened, and a punctate high-density lesion is seen in the right adrenal gland.
+lymphatic system: No enlarged lymph nodes are seen in the retroperitoneum.",amos_0008,0.29761904761904756,"{""liver"": 0.6666666666666666, ""spleen"": 0.6666666666666666, ""biliary system"": 0.75, ""lymphatic system"": 0, ""pancreas"": 0.0, ""kidneys"": 0.0, ""endocrine system"": 0.0}",0.6666666666666666,0.6666666666666666,0.75,0.0,0.0,0.0,0.0,0.0
+"muscle system: Increased size of the left iliac spine and right L4 inferior endplate.
+lymphatic system: Subcentimeter right iliac fossa lymph node.","liver: The liver is normal in position, size, and shape. A small nodular low-density lesion is seen at the anterior edge of the left lobe, with slight enhancement. The intrahepatic duct system is not obviously dilated.
+biliary system: The gallbladder is normal in size with homogeneous density.
+spleen: An irregular soft tissue density mass is seen in the splenic gastric space, about 39mm×77mm in size, with indistinct boundary with the spleen. The mass shows moderate inhomogeneous enhancement on enhanced scanning.
+pancreas: The surface of the pancreas is rough with homogeneous density, and the adjacent fat space is clear.
+kidneys: Both kidneys are normal in shape and position with no significant abnormal density in the parenchyma, and the perirenal fat space is clear.
+lymphatic system: No obvious enlarged lymph nodes are seen in the abdominal cavity and retroperitoneum.",amos_0013,0.0,"{""lymphatic system"": 0, ""muscle system"": 0, ""liver"": 0.0, ""pancreas"": 0.0, ""kidneys"": 0.0, ""spleen"": 0.0, ""biliary system"": 0.0}",0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0

@@ -1,0 +1,12 @@
+{
+    "green": 0.14880952380952378,
+    "region_means": {
+        "liver": 0.3333333333333333,
+        "biliary system": 0.375,
+        "spleen": 0.3333333333333333,
+        "pancreas": 0.0,
+        "kidneys": 0.0,
+        "endocrine system": 0.0,
+        "lymphatic system": 0.0
+    }
+}
