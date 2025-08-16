@@ -37,8 +37,10 @@ RUN pip install --no-cache-dir huggingface_hub
 
 # Create necessary directories
 RUN mkdir -p /workspace/outputs
+RUN mkdir -p /workspace/inputs
+RUN mkdir -p /workspace/inputs/test_preprocessed
+
 # Make download script executable
-RUN chmod +x /workspace/download_model.sh
 # Make predict.sh executable
 RUN chmod +x /workspace/predict.sh
 
